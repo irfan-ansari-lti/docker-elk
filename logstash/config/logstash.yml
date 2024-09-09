@@ -5,3 +5,13 @@
 http.host: 0.0.0.0
 
 node.name: logstash
+
+xpack:
+  monitoring:
+    enabled: true
+    elasticsearch:
+      username: 'elastic'
+      password: 'elastic'
+      hosts: ["http://127.0.0.1:9200"]
+      ssl:
+        verification_mode: none
